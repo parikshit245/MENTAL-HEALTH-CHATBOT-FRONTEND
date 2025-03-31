@@ -1,7 +1,7 @@
 import Home from "./components/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
-import ChatBot from "./components/ChatBot";
+import ChatApp from "./components/ChatBot";
 import Community from "./components/Community";
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login/>}/>
-        <Route path="/chat" element={<ChatBot/>}/>
+        <Route path="/chat" element={<ChatApp/>}/>
         <Route path="/community" element={<Community/>}/>
       </Routes>
     </>

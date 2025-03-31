@@ -3,7 +3,12 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    // Added from new code
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -33,6 +38,28 @@ export default {
           12: "#2E2A41",
           13: "#6C7275",
         },
+        // Added from new code
+        'white': '#FFFFFF',
+        'main': 'rgba(68, 48, 103, 0.9)',
+        'secondary': '#202020',
+        'button-hover': '#FF00FF',
+        'user-icon': '#00D4FF',
+        'groupings': '#FFD700',
+        'gpt-icon': '#6A0DAD',
+        'black': '#000000',
+        'user-menu-hover': '#3A2F5E',
+        'text': '#39FF14',
+        'gpt3': '#FF4500',
+        'gpt4': '#BB00FF',
+        'secondary-p': '#A8A8FF',
+        'logo': '#C0C0C0',
+        'model-name': '#E1E6ED',
+        'disclaimer': '#D0D2E1',
+        'border1': '#6C7275',
+        'user-menu-border': '#34373a',
+        'user-menu-selected-border': '#4a5562',
+        'border2': '#292d32',
+        'user-message-border': '#2f353d',
       },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],
@@ -70,6 +97,8 @@ export default {
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conic-gradient":
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
+        // Added from new code
+        'assistant-bg': 'linear-gradient(135deg, #1C1A30, #323232)',
       },
     },
   },
@@ -128,5 +157,6 @@ export default {
         },
       });
     }),
+    // No new plugins to add from the new code since its plugins array was empty
   ],
 };
