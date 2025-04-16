@@ -314,7 +314,7 @@ const CommunityChat = () => {
               <label className="block text-sm text-gray-400 mb-2">Group Icon (Optional)</label>
               <input
                 type="file"
-                accept="image/*"
+                accept="image/*"  
                 onChange={handleIconUpload}
                 className="w-full p-2 bg-[#2A2A3E] border border-[#3A3A4E] rounded-xl text-white"
               />
